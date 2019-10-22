@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    String teste = "1 + 1 + 1";
+
+    String [] texto = teste.split(" ");
+
+    for(int i=0; i < texto.length; i++){
+      //System.out.print(texto[i]);
+      if(texto[i].equals("+")){
+        int n1, n2, n3;
+        n1 = Integer.parseInt(texto[i-1]);
+        n2 = Integer.parseInt(texto[i+1]);
+        n3 = Integer.parseInt(texto[i+1]);
+        System.out.print(n1+n2+n3);
+      }else if (texto[i].equals("-")){
+        int n1, n2, n3;
+        n1 = Integer.parseInt(texto[i-1]);
+        n2 = Integer.parseInt(texto[i+1]);
+        n3 = Integer.parseInt(texto[i+1]);
+        System.out.print(n1-n2-n3);
+      }else if (texto[i].equals("*")){
+        int n1, n2, n3;
+        n1 = Integer.parseInt(texto[i-1]);
+        n2 = Integer.parseInt(texto[i+1]);
+        n3 = Integer.parseInt(texto[i+1]);
+        System.out.print(n1*n2*n3);
+      }else if (texto[i].equals("/")){
+        int n1, n2, n3;
+        n1 = Integer.parseInt(texto[i-1]);
+        n2 = Integer.parseInt(texto[i+1]);
+        n3 = Integer.parseInt(texto[i+1]);
+        System.out.print(n1/n2/n3);
+      }
+    }
+
+
+  }
+}
